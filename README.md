@@ -1,5 +1,5 @@
 # Zadanie rekrutacyjne na stanowisko junior frontend developer
-## Kava Studio ([http://d.pr/i/u8Jj](https://kavastudio.pl))
+## Kava Studio ([https://kavastudio.pl](https://kavastudio.pl))
 
 Cześć!
 
