@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<title>Calculator - Mateusz Pawlik</title>
+	<meta name="description" content="Calculator Mateusz Pawlik"/>
+	<meta name="keywords" content="Małgorzata, Pawlik, Uniwersytet Śląski, Katowice, Katedra Mikrobiologii, Mikrobiologia"/>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+</head>
+<body>
+	<div class="calculator">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12 head">
+				<input type="text" id="operation" class="operation" disabled="" value="">
+				<input type="text" id="score" class="score" disabled="" value="0">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-xs-3 grey"><input type="button" value="%" onclick="addtoscore('%')"></div>
+			<div class="col-sm-3 col-xs-3 grey"><input type="button" value="&#x207a; &#x2044; &#x208b;" onclick="addtoscore('-'+'')"></div>
+			<div class="col-sm-3 col-xs-3 grey"><input type="button" value="C" onclick="addtoscore('C')"></div>
+			<div class="col-sm-3 col-xs-3 purple"><input type="button" value="/" onclick="addtoscore('/')"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-xs-3 grey-shadow"><input type="button" value="7" onclick="addtoscore('7')"></div>
+			<div class="col-sm-3 col-xs-3 grey-shadow"><input type="button" value="8" onclick="addtoscore('8')"></div>
+			<div class="col-sm-3 col-xs-3 grey-shadow"><input type="button" value="9" onclick="addtoscore('9')"></div>
+			<div class="col-sm-3 col-xs-3 purple"><input type="button" value="x" onclick="addtoscore('*')"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-xs-3 grey-shadow"><input type="button" value="4" onclick="addtoscore('4')"></div>
+			<div class="col-sm-3 col-xs-3 grey-shadow"><input type="button" value="5" onclick="addtoscore('5')"></div>
+			<div class="col-sm-3 col-xs-3 grey-shadow"><input type="button" value="6" onclick="addtoscore('6')"></div>
+			<div class="col-sm-3 col-xs-3 purple"><input type="button" value="-" onclick="addtoscore('-')"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-xs-3 grey-shadow"><input type="button" value="1" onclick="addtoscore('1')"></div>
+			<div class="col-sm-3 col-xs-3 grey-shadow"><input type="button" value="2" onclick="addtoscore('2')"></div>
+			<div class="col-sm-3 col-xs-3 grey-shadow"><input type="button" value="3" onclick="addtoscore('3')"></div>
+			<div class="col-sm-3 col-xs-3 purple"><input type="button" value="+" onclick="addtoscore('+')"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-xs-3 grey-shadow last-left"><input type="button" value="0" onclick="addtoscore('0')"></div>
+			<div class="col-sm-3 col-xs-3 grey-shadow"><input type="button" value="," onclick="addtoscore('.')"></div>
+			<div class="col-sm-6 col-xs-6 pink last-right"><input type="button" value="=" onclick="answer()"></div>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>

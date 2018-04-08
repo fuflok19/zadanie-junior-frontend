@@ -1,0 +1,127 @@
+*{
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
+}
+
+body{
+	background: #9257e0;
+	background: -webkit-linear-gradient(left, #9257e0 0%, #f9946e 89%);
+	background: -o-linear-gradient(left, #9257e0 0%, #f9946e 89%);
+	background: linear-gradient(to right, #9257e0 0%, #f9946e 89%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9257e0', endColorstr='#f9946e',GradientType=1 );
+}
+
+.calculator{
+	width: 368px;
+	margin-top: 175px;
+}
+
+.head{
+	background-color: #212121;
+	text-align: right;
+	border-radius: 5px 5px 0 0;
+}
+
+.head input{
+	background-color: transparent;
+	width: 100%;
+	border: none;
+	text-align: right;
+}
+
+.operation{
+	display: inherit;
+	font-size: 18px;
+	color: #d98192;
+	font-weight: 400;
+	margin: 35px 0 0 0;
+	padding-right: 20px;
+}
+
+.score{
+	font-weight: 300;
+	color: #fff;
+	margin: 20px 0 25px 0;
+	font-size: 50px;
+	padding-right: 20px;
+}
+
+.grey, .grey-shadow, .purple, .pink{
+	text-align: center;
+	font-size: 25px;
+	color: #212121;
+	font-weight: 300;
+	padding-right: 0 !important;
+    padding-left: 0 !important;
+    -webkit-box-shadow: inset -26px -26px 96px -66px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -26px -26px 96px -66px rgba(0,0,0,0.75);
+	box-shadow: inset -26px -26px 96px -66px rgba(0,0,0,0.75);
+}
+
+.grey input, .grey-shadow input, .purple input, .pink input{
+	background-color: transparent;
+	border: none;
+	width: 100%;
+    height: 100%;
+    padding: 30px 0 30px 0;
+    transition: .6s;
+}
+
+.grey input:hover, .grey-shadow input:hover, .purple input:hover, .pink input:hover{
+	background-color: rgba(51,51,51, 0.3);
+}
+
+*:focus {
+    outline: none;
+}
+
+.purple{
+	color: #fff;
+	background-color: #9156e1;
+}
+
+.grey{
+	background-color: #f3f3f3;
+}
+
+.grey-shadow{
+	background-color: #f5f5f5;
+}
+
+.pink{
+	background-color: #e62f89;
+	color: #fff;
+}
+
+.last-left{
+	border-radius: 0 0 0 5px;
+}
+
+.last-right{
+	border-radius: 0 0 5px 0;
+}
+
+.last-left input{
+	border-radius: 0 0 0 5px;
+}
+
+.last-right input{
+	border-radius: 0 0 5px 0;
+}
+
+@media screen and (max-width: 500px){
+	.calculator{
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.calculator{
+		margin-top: 50px;
+		max-width: 100%;
+		overflow: hidden;
+	}
+	.grey, .grey-shadow, .purple, .pink{
+		font-size: 20px;
+	}
+}
